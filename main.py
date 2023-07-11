@@ -10,6 +10,9 @@ FPS = 10
 pygame.init()
 surface = pygame.display.set_mode(RES)
 clock = pygame.time.Clock()
+pygame.display.set_caption('Симулятор жизни')
+icon = pygame.image.load('images/icon.png')
+pygame.display.set_icon(icon)
 
 next_field = [[0 for i in range(W)] for j in range(H)]
 current_field = [[randint(0, 1) for i in range(W)] for j in range(H)]
